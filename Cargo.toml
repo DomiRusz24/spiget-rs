@@ -1,0 +1,212 @@
+[package]
+name = "spiget"
+edition = "2021"
+version = "0.1.0"
+description = "Spiget client, generated from the OpenAPI spec."
+homepage = "https://github.com/domirusz24/spiget-rs"
+documentation = "https://docs.rs/spiget"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/domirusz24/spiget-rs"
+
+[workspace]
+members = []
+
+[dependencies]
+futures = "0.3.25"
+httpclient = "0.18.0"
+serde_json = "1.0.81"
+
+[dependencies.chrono]
+version = "0.4.26"
+features = ["serde"]
+
+[dependencies.serde]
+version = "1.0.137"
+features = ["derive"]
+
+[dev-dependencies.tokio]
+version = "1.18.2"
+features = ["full"]
+
+[lib]
+path = "src/lib.rs"
+name = "spiget"
+doctest = false
+edition = "2021"
+crate-type = ["rlib"]
+required-features = []
+
+[[example]]
+path = "examples/delete_webhook_delete_by_secret.rs"
+name = "delete_webhook_delete_by_secret"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_authors.rs"
+name = "get_authors"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_authors_by_author.rs"
+name = "get_authors_by_author"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_authors_resources_by_author.rs"
+name = "get_authors_resources_by_author"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_authors_reviews_by_author.rs"
+name = "get_authors_reviews_by_author"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories.rs"
+name = "get_categories"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories_by_category.rs"
+name = "get_categories_by_category"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories_resources_by_category.rs"
+name = "get_categories_resources_by_category"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources.rs"
+name = "get_resources"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_author_by_resource.rs"
+name = "get_resources_author_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_by_resource.rs"
+name = "get_resources_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_download_by_resource.rs"
+name = "get_resources_download_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_for_by_version.rs"
+name = "get_resources_for_by_version"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_free.rs"
+name = "get_resources_free"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_new.rs"
+name = "get_resources_new"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_premium.rs"
+name = "get_resources_premium"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_reviews_by_resource.rs"
+name = "get_resources_reviews_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_updates_by_resource.rs"
+name = "get_resources_updates_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_updates_latest_by_resource.rs"
+name = "get_resources_updates_latest_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_versions_by_resource.rs"
+name = "get_resources_versions_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_versions_by_version.rs"
+name = "get_resources_versions_by_version"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_versions_download_by_version.rs"
+name = "get_resources_versions_download_by_version"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_resources_versions_latest_by_resource.rs"
+name = "get_resources_versions_latest_by_resource"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_search_authors_by_query.rs"
+name = "get_search_authors_by_query"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_search_resources_by_query.rs"
+name = "get_search_resources_by_query"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_status.rs"
+name = "get_status"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_webhook_events.rs"
+name = "get_webhook_events"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_webhook_status_by_id.rs"
+name = "get_webhook_status_by_id"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_webhook_register.rs"
+name = "post_webhook_register"
+edition = "2021"
+required-features = []
